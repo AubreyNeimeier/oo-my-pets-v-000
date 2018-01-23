@@ -72,7 +72,7 @@ class Owner
     end
   end
 =end
-    o
+
     def sell_pets
       pets.each do |keys, values|
         values.each do |value|
