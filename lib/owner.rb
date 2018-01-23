@@ -8,6 +8,7 @@ class Owner
     @species = species
     @@all << self
     @pets = {:fishes => [], :dogs => [], :cats => []}
+    #values are stored in arrays, therefore we will shovel values in
   end
 
   def self.all
