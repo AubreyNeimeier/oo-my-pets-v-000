@@ -62,7 +62,7 @@ class Owner
   def feed_fish
     @pets[:fishes].each {|fish| fish.mood = "happy"}
   end
-
+=begin
   def sell_pets
     pets.each do |species, pets|
       pets.each do |pet|
@@ -70,6 +70,18 @@ class Owner
       end
       pets.clear
     end
+  end
+=end
+    o
+    def sell_pets
+      pets.each do |keys, values|
+        values.each do |value|
+          value.mood = "nervous"
+        end
+        values.clear
+      end
+    end
+
 =begin
 /////hard-coding the answer//// instead, iterate like above
     @pets[:fishes].each {|x| x.mood = "nervous"}
