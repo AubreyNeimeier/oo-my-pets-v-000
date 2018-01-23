@@ -64,13 +64,21 @@ class Owner
   end
 
   def sell_pets()
+    pets.each do |species, pets|
+      species.each do |pets|
+        pets.mood = "nervous"
+      end
+      pets.clear
+    end
+=begin
+/////hard-coding the answer//// instead, iterate like above
     @pets[:fishes].each {|x| x.mood = "nervous"}
     @pets[:cats].each {|x| x.mood = "nervous"}
     @pets[:dogs].each {|x| x.mood = "nervous"}
     @pets[:fishes].clear
     @pets[:cats].clear
     @pets[:dogs].clear
-
+=end
   end
 
   def list_pets
